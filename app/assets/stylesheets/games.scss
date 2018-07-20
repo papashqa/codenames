@@ -1,0 +1,75 @@
+// Place all the styles related to the Games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body {
+  height: 98%;
+}
+
+table {
+  height: 100%;
+  width: 100%;
+}
+
+tr, td {
+  height: 20%;
+  width: 20%;
+}
+
+@font-face {
+  font-family: "lobster";
+  src: font-url('lobster.ttf');
+}
+
+.button_to {
+  height: 100%;
+}
+
+.ui-button {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #bee1fa;
+  border-radius: 3px;
+  font-size: 24px;
+  font-family: lobster;
+  padding: 12px 12px 12px 12px;
+  text-decoration: none;
+  display: block;
+  text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+  font-weight: bold;
+  color: #781414;
+  background-image: -webkit-linear-gradient(top, #f2f9fe, #d6f0fd);
+}
+
+.ui-button:hover {
+  border: 1px solid #93cdf7;
+  background-color: #c3e3fa; 
+  background-image: -webkit-linear-gradient(top, #c3e3fa, #a5defb);
+}
+
+.white, .white:hover {
+  border: 1px solid #a0a0a0;
+  background-image: -webkit-linear-gradient(top, #f4f5f5, #f6f283);
+}
+
+.black, .black:hover {
+  border: 1px solid #a0a0a0;
+  background-image: -webkit-linear-gradient(top, #d3d3d3, #707070);
+}
+
+.red, .red:hover {
+  border: 1px solid #a0a0a0;
+  background-image: -webkit-linear-gradient(top, #ff9a9a, #ff4040);
+}
+
+.green, .green:hover {
+  border: 1px solid #a0a0a0;
+  background-image: -webkit-linear-gradient(top, #26FF05, #008C00);
+}
+
+.captain {
+  height: 98%;
+  td {
+    padding: 1.5%;
+  }
+}

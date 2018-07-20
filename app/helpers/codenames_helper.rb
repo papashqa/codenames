@@ -1,0 +1,2 @@
+module CodenamesHelper
+end
