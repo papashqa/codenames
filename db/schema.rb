@@ -12,10 +12,13 @@
 
 ActiveRecord::Schema.define(version: 2018_07_18_160851) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "codenames", force: :cascade do |t|
     t.integer "team"
     t.text "word"
-    t.integer "game_id"
+    t.bigint "game_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "n"
@@ -29,4 +32,5 @@ ActiveRecord::Schema.define(version: 2018_07_18_160851) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "codenames", "games"
 end
