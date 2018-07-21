@@ -4,7 +4,7 @@
       <% @game.codenames.sort.each do |codename| %>
         <td class= "<%= ['white','red','green','black'][codename.team] %>" >
           <%= button_to codename.word, {action: :mark, controller: "codenames", game_id: @game.id, n: codename.n},
-              :class => "ui-button ui-widget ui-corner-all" + (codename.known==1 ? ' '+['white','red','green','black'][codename.team] : ""),
+              :class => "ui-button ui-widget ui-corner-all" + " crutch" + (codename.known==1 ? ' '+['white','red','green','black'][codename.team] : ""),
               :team => codename.team,
               :method => :get,
               :remote => true %>
